@@ -34,3 +34,16 @@ messages = [
 # Invoke the model with messages
 result = model.invoke(messages)
 print(f"Answer from AI: {result.content}")
+
+
+messages = [
+    SystemMessage(content="Solve the following math problems"),
+    HumanMessage(content="What is 81 divided by 9?"),
+    AIMessage(content="81 divided by 9 is 9."),
+    HumanMessage(content="What is 10 times 5?"),
+    AIMessage(content="10 times 5 is 50."),
+    HumanMessage(content='What is square root of 5213?')
+]
+
+result = model.invoke(messages)
+print(result.content)

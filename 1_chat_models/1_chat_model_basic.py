@@ -11,7 +11,7 @@ load_dotenv()
 model = ChatOpenAI(model="gpt-4o")
 
 # Invoke the model with a message
-result = model.invoke("What is 81 divided by 9?")
+result = model.invoke("Who is Mallick Rel in Malazan?")
 print("Full result:")
 print(result)
 print("Content only:")
